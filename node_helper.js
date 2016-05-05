@@ -17,13 +17,18 @@ NodeHelper = Class.extend({
 	start: function() {
 		this.expressApp.get('/music', function (req, res) {
 			var fs = require('fs');
-		
+			var path = require('path');
+
+			var files = [];
+
 			fs.readdir('modules/mm-music-player/music', (err, data) => {
-			  if (err){
-				throw err;
-			  }else{
-				res.send(data);
-			  }
+				for(i = 0; i < data.length; i++){
+					if(path.extname(data[i]) == ".mp3"){
+						files.push(data[i]);
+					}
+				}
+				
+				res.send(files);
 			});
 		});
 	},
