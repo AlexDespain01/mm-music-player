@@ -1,0 +1,53 @@
+html{
+	/*cursor: default; For debugging */
+}
+
+.music{
+	z-index: 1;
+	position: absolute;
+		bottom: 0px;
+		left: 20px;
+	font-size: 25px;
+	width: 245px;
+	color: #FFF;
+}
+
+.play, .pause, .next, .back, .volume{
+	margin: 15px;
+	float: left;
+}
+
+.music .slider{
+	border-width: 1px;
+    border-style: solid;
+    border-color: #FFF; 
+	border-radius: 25px;
+	height: 2px;
+	background-color: #FFF;
+}
+
+.music .playing{
+	display: none;
+	position: absolute;
+	bottom: 100px;
+	left: 0px;
+	font-size: 20px;
+	width: 245px;
+	text-align: center;
+	line-height: normal;
+}
+
+.ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: #FFF;
+	border-radius: 100%;
+	border: 1px solid #000;
+    font-weight: bold;
+    outline: none;
+    top: -7.5px;
+    margin-left: -12px;
+}
