@@ -1,6 +1,6 @@
 MM-Music-Player
 ===
-[MagicMirror](https://github.com/MichMich/MagicMirror) Module to play music on Magic Mirror.
+[MagicMirror](https://github.com/MichMich/MagicMirror/tree/v2-beta) Module to play music on Magic Mirror.
 
 Setup:
 ---
